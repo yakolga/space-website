@@ -1,0 +1,53 @@
+@use '../../scss/variables' as *;
+@use '../../scss/mixins' as *;
+
+.header {
+    background-color: $color-black;
+    padding: 12px 20px;
+    position: relative;
+
+    &__burger {
+        @include respond(tablet) {
+            display: none;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        list-style-type: none;
+        gap: 40px;
+        background-color: $color-black;
+        padding: 20px 40px;
+        right: -100%;
+        transition: 0.5s right;
+        top: 100%;
+
+        &--open {
+            right: 0;
+        }
+
+        @include respond(tablet) {
+            position: static;
+            flex-direction: row;
+            padding: 0;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-white;
+        
+        &:hover {
+            @include gradient-text($gradient-main);
+        }
+    }
+}

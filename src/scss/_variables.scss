@@ -1,0 +1,14 @@
+$color-primary: #FF70D9;
+$color-secondary: #EBFF00;
+$color-dark: #304571;
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+$font-primary: 'Lato', sans-serif;
+
+$breakpoints: (
+  tablet: 767px,
+  laptop: 1247px
+);
+
+$gradient-main: linear-gradient(90deg, #EBFF00 0%, #FF70D9 100%);

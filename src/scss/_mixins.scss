@@ -1,0 +1,21 @@
+@use '../scss/variables' as *;
+
+@mixin respond($bp) {
+  $value: map-get($breakpoints, $bp);
+
+  @if $value == null {
+    @error "Breakpoint `#{$bp}` does not exist in $breakpoints map.";
+  }
+
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

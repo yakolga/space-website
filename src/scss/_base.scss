@@ -1,0 +1,26 @@
+@use '../scss/variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+.container {
+    max-width: 1076px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
