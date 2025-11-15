@@ -50,4 +50,24 @@
             @include gradient-text($gradient-main);
         }
     }
+
+    &__cart {
+        &-icon {
+            height: auto; 
+            transition: transform .18s ease;
+
+            &:hover {
+                .header__cart-shape {
+                    fill: url(#cartGrad);   
+                    fill-opacity: 0.95;      
+                }
+            }
+        }
+
+        &-shape {
+            transition: fill .2s ease, fill-opacity .2s ease;
+            fill: #fff; 
+            fill-opacity: 1;
+        }
+    }
 }
