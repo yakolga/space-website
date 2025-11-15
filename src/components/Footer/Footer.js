@@ -6,7 +6,7 @@ function Footer() {
         <footer className="footer">
             <div className="container">
                 <div className="footer__inner">
-                    <img className="footer__icon" src={rocketIcon} alt="Rocket" loading="lazy"></img>
+                    <img className="footer__icon" src={rocketIcon} alt="Rocket" loading="lazy"/>
                     <p className="footer__descr">Exciting space adventure!</p>
                 </div>
             </div>

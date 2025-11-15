@@ -12,18 +12,18 @@ function Header() {
             <div className="container">
                 <div className="header__inner">
                     <a href="/" className="header__logo">
-                        <img src={logo} alt="Website logo"></img>
+                        <img src={logo} alt="Website logo"/>
                     </a>
                     <nav className="header__nav">
                         <ul className={open ? 'header__list header__list--open' : 'header__list'}>
                             <li className="header__item">
-                                <a href="/gg" title="Home" className="header__link">Home</a>
+                                <a href="#" title="Home" className="header__link">Home</a>
                             </li>
                             <li className="header__item">
-                                <a href="/gg" title="Products" className="header__link">Products</a>
+                                <a href="#" title="Products" className="header__link">Products</a>
                             </li>
                             <li className="header__item">
-                                <a href="/gg" title="Cart" className="header__cart">
+                                <a href="#" title="Cart" className="header__cart">
                                     <svg className="header__cart-icon" width="24" height="21" viewBox="0 0 24 21" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="false">
                                         <defs>
                                             <linearGradient id="cartGrad" x1="0" x2="1" y1="0" y2="1">
@@ -41,7 +41,7 @@ function Header() {
                             </li>
                         </ul>
                         <button className="header__burger" onClick={() => setOpen(prev => !prev)} aria-expanded={open}>
-                            <img src={open ? crossIcon : burgerIcon} alt="Open menu"></img>
+                            <img src={open ? crossIcon : burgerIcon} alt={open ? "Close menu" : "Open menu"}/>
                         </button>
                     </nav>
                 </div>
