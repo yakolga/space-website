@@ -5,6 +5,7 @@
     background-color: $color-black;
     padding: 5px 20px;
     position: relative;
+    overflow-x: clip;
 
     @include respond(tablet) {
         padding: 24px 30px 20px;
