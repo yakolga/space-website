@@ -28,8 +28,8 @@
         flex-direction: column;
         position: absolute;
         list-style-type: none;
-        gap: 65px;
         background-color: $color-black;
+        gap: 40px;
         padding: 20px 40px;
         right: -100%;
         transition: 0.5s right;
@@ -43,6 +43,7 @@
             position: static;
             flex-direction: row;
             padding: 0;
+            gap: 65px;
         }
     }
 
@@ -53,26 +54,19 @@
         
         &:hover {
             @include gradient-text($gradient-main);
+            background-position: 100% 50%;
         }
     }
 
     &__cart {
         &-icon {
             height: auto; 
-            transition: transform .18s ease;
 
             &:hover {
                 .header__cart-shape {
                     fill: url(#cartGrad);   
-                    fill-opacity: 0.95;      
                 }
             }
-        }
-
-        &-shape {
-            transition: fill .2s ease, fill-opacity .2s ease;
-            fill: #fff; 
-            fill-opacity: 1;
         }
     }
 
