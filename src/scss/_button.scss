@@ -1,0 +1,28 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+.btn {
+    font-size: 16px;
+    border-radius: 100px;
+    font-weight: 700;
+    padding: 7px 40px;
+    transition: 0.3s background-color;
+
+    @include respond(tablet) {
+        padding: 14px 40px;
+        font-size: 22px;
+    }
+
+    &:hover {
+        background-color: $bg-button-hover;
+    }
+
+    &--solid {
+        background-color: $color-secondary;
+        color: $color-black;
+    }
+
+    &--outline {
+        border: 2px solid $color-secondary;
+    }
+}

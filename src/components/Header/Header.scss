@@ -3,8 +3,12 @@
 
 .header {
     background-color: $color-black;
-    padding: 12px 20px;
+    padding: 5px 20px;
     position: relative;
+
+    @include respond(tablet) {
+        padding: 24px 30px 20px;
+    }
 
     &__burger {
         @include respond(tablet) {
@@ -23,7 +27,7 @@
         flex-direction: column;
         position: absolute;
         list-style-type: none;
-        gap: 40px;
+        gap: 65px;
         background-color: $color-black;
         padding: 20px 40px;
         right: -100%;
@@ -68,6 +72,18 @@
             transition: fill .2s ease, fill-opacity .2s ease;
             fill: #fff; 
             fill-opacity: 1;
+        }
+    }
+
+    &__logo {
+        max-width: 70px;
+
+        @include respond(tablet) {
+            max-width: 104px;
+        }
+
+        img {
+            width: 100%;
         }
     }
 }
