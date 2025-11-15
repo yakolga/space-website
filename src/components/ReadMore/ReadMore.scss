@@ -1,0 +1,23 @@
+@use '../../scss/variables' as *;
+
+.readmore {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__summary {
+        list-style: none;
+        cursor: pointer;
+        display: inline-flex;
+        gap: .5rem;
+        align-items: center;
+        user-select: none;
+        margin-top: 20px;
+        font-weight: 800;
+        color: $color-secondary;
+        transition: 0.3s color;
+
+        &:hover {
+            color: $bg-button-hover;
+        }
+    }
+}
