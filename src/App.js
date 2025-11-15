@@ -1,13 +1,15 @@
 import './App.scss';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Offers from './components/Offers/Offers';
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
       <Header/>
       <Hero/>
-    </div>
+      <Offers/>
+    </main>
   );
 }
 
