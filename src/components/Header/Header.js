@@ -2,10 +2,27 @@ import logo from "../../assets/icons/logo.svg";
 import burgerIcon from '../../assets/icons/menu.svg';
 import crossIcon from '../../assets/icons/cross.svg';
 import './Header.scss';
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Header() {
     const [open, setOpen] = useState(false);
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(e) {
+            if (navRef.current && !navRef.current.contains(e.target)) {
+                setOpen(false);
+            }
+        }
+
+        if (open) {
+            document.addEventListener("click", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, [open]);
 
     return (
         <header className="header">
@@ -14,7 +31,7 @@ function Header() {
                     <a href="/" className="header__logo">
                         <img src={logo} alt="Website logo"/>
                     </a>
-                    <nav className="header__nav">
+                    <nav className="header__nav" ref={navRef}>
                         <ul className={open ? 'header__list header__list--open' : 'header__list'}>
                             <li className="header__item">
                                 <a href="#" title="Home" className="header__link">Home</a>
