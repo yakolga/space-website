@@ -40,8 +40,8 @@ function Header() {
                                 </a>
                             </li>
                         </ul>
-                        <button className="header__burger" onClick={() => setOpen(prev => !prev)} aria-expanded={open}>
-                            <img src={open ? crossIcon : burgerIcon} alt={open ? "Close menu" : "Open menu"}/>
+                        <button className="header__burger" onClick={() => setOpen(prev => !prev)} aria-expanded={open} aria-label={open ? "Close menu" : "Open menu"}>
+                            <img src={open ? crossIcon : burgerIcon} alt=""/>
                         </button>
                     </nav>
                 </div>

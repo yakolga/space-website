@@ -12,7 +12,7 @@ function Header() {
                     <div className="hero__texts">
                         <h1 className="hero__heading">Discover the vast expanses of <span>space</span></h1>
                         <p className="hero__descr">Where the possibilities are <span>endless!</span></p>
-                        <a className="btn btn--solid hero__btn" href="#">Learn more</a>
+                        <a className="btn btn--solid hero__btn" href="#" title="Larn more">Learn more</a>
                     </div>
                 </div>
             </div>
