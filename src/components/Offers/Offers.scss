@@ -2,8 +2,8 @@
 @use '../../scss/mixins' as *;
 
 .offers {
-    background-color: rgba(13, 30, 72, 1);
-    background-image: linear-gradient(360deg, rgba(13, 30, 72, 1) 100%, rgba(48, 69, 113, 1) 100%);
+    background: linear-gradient(196.2deg, #0D1E48 0%, #304571 100%);
+
     padding: 50px 20px;
 
     @include respond(tablet) {
@@ -51,6 +51,47 @@
                 .offer__subtitle {
                     font-size: 26px;
                 }
+            }
+        }
+    }
+
+    &__descr {
+        margin-top: 50px;
+
+        p {
+            opacity: .6;
+        }
+
+        @include respond(tablet) {
+            margin-top: 55px;
+        }
+
+        &-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: $color-white;
+
+            @include respond(tablet) {
+                font-size: 24px;
+            }
+
+            @include respond(laptop) {
+                font-size: 32px;
+            }
+        }
+
+        &-more {
+            margin-top: 20px;
+            font-weight: 700;
+            color: $color-white;
+            font-size: 14px;
+
+            @include respond(tablet) {
+                font-size: 16px;
+            }
+
+            @include respond(laptop) {
+                font-size: 20px;
             }
         }
     }
