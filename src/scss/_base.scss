@@ -12,6 +12,7 @@ a {
 
 body {
     font-family: $font-primary;
+    overflow-x: hidden;
 }
 
 .container {
@@ -20,7 +21,6 @@ body {
 }
 
 button {
-    background-color: transparent;
     border: none;
     cursor: pointer;
 }
