@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/space-website/static/css/main.2c5ca0fc.css",
-    "main.js": "/space-website/static/js/main.22164c84.js",
+    "main.css": "/space-website/static/css/main.192df3f2.css",
+    "main.js": "/space-website/static/js/main.087f4e79.js",
     "static/media/rocket.svg": "/space-website/static/media/rocket.bf2dbb7c0c33ada062ba83af3725edbe.svg",
     "static/media/Lato-Bold.ttf": "/space-website/static/media/Lato-Bold.0baf4e4829ca0a3e1e5c.ttf",
     "static/media/Lato-ExtraBold.ttf": "/space-website/static/media/Lato-ExtraBold.0d13f4b5f45c14cf4d3c.ttf",
@@ -21,11 +21,11 @@
     "static/media/menu.svg": "/space-website/static/media/menu.7e65dcdbfcb4fb7f60ea90f61a0ab5f8.svg",
     "index.html": "/space-website/index.html",
     "static/media/cross.svg": "/space-website/static/media/cross.79886a19c519555d9ce45bc4197a77f5.svg",
-    "main.2c5ca0fc.css.map": "/space-website/static/css/main.2c5ca0fc.css.map",
-    "main.22164c84.js.map": "/space-website/static/js/main.22164c84.js.map"
+    "main.192df3f2.css.map": "/space-website/static/css/main.192df3f2.css.map",
+    "main.087f4e79.js.map": "/space-website/static/js/main.087f4e79.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c5ca0fc.css",
-    "static/js/main.22164c84.js"
+    "static/css/main.192df3f2.css",
+    "static/js/main.087f4e79.js"
   ]
 }
