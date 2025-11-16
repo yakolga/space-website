@@ -4,7 +4,7 @@ function Offer({title, subtitle, link, bgClass}) {
             <div className="offer__inner">
                 <span className="offer__title">{title}</span>
                 <p className="offer__subtitle">{subtitle}</p>
-                <a className="btn btn--outline offer__btn" href={link}>Learn more</a>
+                <a className="btn btn--outline offer__btn" href={link} title="Learn more">Learn more</a>
             </div>
         </div>
     )
